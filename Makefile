@@ -1,2 +1,2 @@
 run:
-	lein exec textsToArff.clj
+	cat load_article.clj textsToArff.clj | lein exec
