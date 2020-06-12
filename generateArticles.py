@@ -11,7 +11,6 @@ for category in categories:
     newsgroups_train = fetch_20newsgroups(subset='test', remove=('heads', 'footers', 'quotes'), categories=[category], return_X_y=True)[0]
     for article in newsgroups_train:
 
-        print(newsgroups_train[0])
         counter += 1
         if not os.path.isdir('resources'):
             os.mkdir('resources')
