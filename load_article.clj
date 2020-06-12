@@ -1,7 +1,7 @@
 (ns load_article
   (:require [clojure.string :as str]))
 
-(def split-regex #"\W")
+(def split-regex #"\W|_")
 ;or #"\.| |\,|~|-|!|@|#|\\|\}|\%|\)|\(|\?|\<|\>|\_|\"|\/|\:|\*|\]|\["
 
 (defn get-all-files [path]
